@@ -4,9 +4,9 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Homayoon"
+title: "Homayoon Alimohammadi"
 description: > # this means to ignore newlines until "email:"
-   My Personal Website
+   A Motivated, Desciplined and Hard-working Software Engineer
 
 email: homayoonalimohammadi@gmail.com
 #blog logo
