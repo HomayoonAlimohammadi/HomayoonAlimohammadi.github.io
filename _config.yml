@@ -10,7 +10,7 @@ description: > # this means to ignore newlines until "email:"
 
 email: homayoonalimohammadi@gmail.com
 #blog logo
-logo: "/assets/images/Me.jpg"
+logo: "/assets/images/new_me.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
@@ -18,7 +18,7 @@ cover: "/assets/images/Cover_2.jpg"
 
 name: 'Homayoon Alimohammadi'
 author: 'Homayoon Alimohammadi'
-author_image: "/assets/images/Me_300_300.jpg"
+author_image: "/assets/images/new_me_300_300.jpg"
 
 paginate:	5
 
