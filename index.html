@@ -27,23 +27,21 @@ layout: default
       <div class="blog-logo" {% if site.logo %}style="background-image: url({{ site.logo | prepend: site.baseurl }})"{% endif %}>
         {{ site.title }}
       </div>
-    <h1 class="blog-title">{{ site.title }}</h1>
+    <h1 class="blog-title" style="font-size: 35px;">{{ site.title }}</h1>
     <h2 class="blog-description">{{ site.description }}</h2>
     <div class="custom-links">
       {% for social in site.social %}
         {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+            <a target="_blank" rel="noopener" class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
               <i class="fa fa-{{ social.icon }}"></i>
             </a>
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %}
 
-      <strong><a href={{ "/resume/" | prepend: site.baseurl }}>Resume</a></strong>
+      <strong><a href={{ "/resume/" | prepend: site.baseurl }} title="Resume">Resume</a></strong>
       &nbsp;&nbsp;·&nbsp;&nbsp;
-      <strong><a href={{ "/projects/" | prepend: site.baseurl }}>Projects</a></strong>
-      &nbsp;&nbsp;·&nbsp;&nbsp;
-      <strong><a href={{ "/blogs/" | prepend: site.baseurl }}>Blogs</a></strong>
+      <strong><a href={{ "/technical/" | prepend: site.baseurl }} title="Technical Blogs">Blogs</a></strong>
     </div>
 </header>
 
@@ -59,32 +57,32 @@ layout: default
     </div>
     <div>
       <p>
-        I try to regularly write about interesting things and challenges that I face in my career life. Make sure to checkout my <a href="/blogs">Blogs</a> if you're interested.
+        I try to regularly write about interesting things and challenges that I face in my career life. Make sure to checkout my <a href="/technical">Blogs</a> if you're interested.
       </p>
       <p>
         You can Checkout my <a href="/resume">Resume</a>, in case you're interested!
       </p>
       <div align="center">
-      <a href="https://medium.com/@homayoonalimohammadi">
+      <a href="https://medium.com/@homayoonalimohammadi" target="_blank" rel="noopener">
         <img src="https://img.shields.io/badge/Medium-123?style=for-the-badge&logo=Medium&logoColor=Black" />
-        <a href="https://dev.to/homayoonalimohammadi">
+        <a href="https://dev.to/homayoonalimohammadi" target="_blank" rel="noopener">
           <img src="https://img.shields.io/badge/Dev-123?style=for-the-badge&logo=DevTo&logoColor=Black" />
         </a>
       </div>
-      <p>There is also link to my <a href="https://github.com/homayoonalimohammadi/">GitHub</a> and <a href="https://gitlab.com/HomayoonAlimohammadi">Gitlab</a> profile.</p>
+      <p>Here are links to my <a href="https://github.com/homayoonalimohammadi/" target="_blank" rel="noopener">GitHub</a> and <a href="https://gitlab.com/HomayoonAlimohammadi" target="_blank" rel="noopener">Gitlab</a> profile.</p>
     </div>    
     <p>
     Make sure to <b>Contact</b> me if you needed to:
     </p>
     <div align="center">
   
-      <a href="https://linkedin.com/in/homayoon-alimohammadi/" style="text-decoration: none">
+      <a href="https://linkedin.com/in/homayoon-alimohammadi/"  target="_blank" rel="noopener" style="text-decoration: none">
         <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
       </a>
-    <a href="https://twitter.com/homayoonalm">
+    <a href="https://twitter.com/homayoonalm" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" />
     </a>
-    <a href="https://telegram.me/homayoonalm">
+    <a href="https://telegram.me/homayoonalm" target="_blank" rel="noopener">
       <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=Telegram&logoColor=white" />
       </a>
       <p style="text-align:center">
