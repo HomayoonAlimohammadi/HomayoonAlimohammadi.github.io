@@ -6,14 +6,41 @@ layout: default
   <style>
     a {
       text-decoration: none;
-      color: rgb(255, 94, 0);
+      color: rgb(0, 187, 255);
       /* font-size: 30px; */
       font-weight: bold;
     }
 
-    .fa {
-      opacity: 0.6;
-    }
+
+    .download-resume {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+
+      .download-button {
+        border-radius: 10px;
+        width: 240px;
+        height: 40px;
+        border-width: 2px;
+        border-color: rgb(0, 187, 255);
+        background-color: white;
+        border-style: solid;
+        color: rgb(0, 187, 255);
+      }
+
+      .download-button:hover {
+        border-radius: 10px;
+        width: 240px;
+        height: 40px;
+        border-width: 2px;
+        border-color: rgb(0, 187, 255);
+        background-color: rgb(214, 242, 255);
+        border-style: solid;
+        color: rgb(0, 187, 255);
+        cursor: pointer;
+      }
+
   </style>
 </head>
 
@@ -28,26 +55,31 @@ layout: default
         {{ site.title }}
       </div>
     <h1 class="blog-title" style="font-size: 35px;">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
+    <h2 class="blog-description" style="color: rgb(72, 72, 72)">{{ site.description }}</h2>
     <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a target="_blank" rel="noopener" class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-
-      <strong><a href={{ "/resume/" | prepend: site.baseurl }} title="Resume">Resume</a></strong>
-      &nbsp;&nbsp;·&nbsp;&nbsp;
-      <strong><a href={{ "/technical/" | prepend: site.baseurl }} title="Technical Blogs">Blogs</a></strong>
+      <a href="mailto: homayoonalimohammadi@gmail.com" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-envelope" title="Email me"
+      target="_blank" rel="noopener noreferrer"></a>&emsp;
+      <a href="https://twitter.com/homayoonalm" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-twitter" title="Twitter"
+      target="_blank" rel="noopener noreferrer"></a>&emsp;
+      <a href="https://www.linkedin.com/in/homayoon-alimohammadi/" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-linkedin" title="LinkedIn"
+      target="_blank" rel="noopener noreferrer"></a>&emsp;
+      <a href="/technical" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-book" title="Technical Blogs"></a>&emsp;
+      <a href="https://github.com/homayoonalimohammadi" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-github" title="GitHub"
+      target="_blank" rel="noopener noreferrer"></a>
+      <br><br>
+      <a href="/resume">
+        <button class="download-button">
+              <span style="font-size: 18px;">
+              <b>My Resume</b>
+          </span>
+        </button>
+      </a>
+     
     </div>
 </header>
 
 
-<main class="content" role="main">
-
+<main class="content" role="main" style="text-align: justify">
 
   <div>
     <h3>Hello guys!</h3> 
