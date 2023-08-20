@@ -6,7 +6,7 @@ gems:
 # Site settings
 title: "Homayoon (Hue) Alimohammadi (Al)"
 description: > # this means to ignore newlines until "email:"
-   A Motivated, Desciplined and Hard-working Software Engineer
+   A Hard-working, Desciplined and Motivated Software Engineer
 
 email: homayoonalimohammadi@gmail.com
 #blog logo
@@ -14,7 +14,7 @@ logo: "/assets/images/me_zoom.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: "/assets/images/Cover_2.jpg"
+cover: "/assets/images/Cover.jpg"
 
 name: 'Homayoon Alimohammadi'
 author: 'Homayoon Alimohammadi'

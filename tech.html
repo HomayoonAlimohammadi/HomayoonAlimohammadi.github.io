@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Technical Blogs
-permalink: /technical/
+permalink: /homayoon-alimohammadi-technical-blogs/
 ---
 
 <head>
+  <script src="https://kit.fontawesome.com/1baae62b3f.js" crossorigin="anonymous"></script>
   <style>
     a {
         text-decoration: none;
@@ -53,26 +54,30 @@ permalink: /technical/
       }
 
       .download-button {
-        border-radius: 10px;
-        width: 295px;
-        height: 40px;
-        border-width: 2px;
+        border-radius: 15px;
+        width: 310px;
+        height: 50px;
+        box-shadow: 1px 2px 5px rgb(0, 187, 255);
+        border-width: 1px;
         border-color: rgb(0, 187, 255);
         background-color: white;
         border-style: solid;
         color: rgb(0, 187, 255);
+        transition: background-color 0.25s ease;
       }
 
       .download-button:hover {
-        border-radius: 10px;
-        width: 295px;
-        height: 40px;
-        border-width: 2px;
-        border-color: rgb(0, 187, 255);
         background-color: rgb(214, 242, 255);
-        border-style: solid;
-        color: rgb(0, 187, 255);
         cursor: pointer;
+      }
+
+      .clickable-icon {
+        transition:transform .15s ease;
+        font-size: 35px;
+      }
+
+      .clickable-icon:hover {
+        transform:scale(1.5)
       }
        
       .keywords {
@@ -83,29 +88,32 @@ permalink: /technical/
 <h1 class="blog-title">Homayoon (Hue) Alimohammadi (Al)</h1>
 <h2 style="text-align: center; opacity: 0.6; font-style:italic;">Software Engineer</h2>
 <div style="opacity: 1; text-align:center">
-  <a href="mailto: homayoonalimohammadi@gmail.com" style="font-size:35px" class="fa fa-envelope" title="Email me"
-  target="_blank" rel="noopener noreferrer"></a>&emsp;
-  <a href="https://twitter.com/homayoonalm" style="font-size:35px" class="fa fa-twitter" title="Twitter"
-  target="_blank" rel="noopener noreferrer"></a>&emsp;
-  <a href="https://www.linkedin.com/in/homayoon-alimohammadi/" style="font-size:35px" class="fa fa-linkedin" title="LinkedIn"
-  target="_blank" rel="noopener noreferrer"></a>&emsp;
-  <a href="/technical" style="font-size:35px" class="fa fa-book" title="Technical Blogs"></a>&emsp;
-  <a href="https://github.com/homayoonalimohammadi" style="font-size:35px" class="fa fa-github" title="GitHub"
-  target="_blank" rel="noopener noreferrer"></a>&emsp;
-  <a href="/" style="font-size:35px" class="fa fa-home" title="Home Page"></a>
+  <a href="mailto: homayoonalimohammadi@gmail.com" class="fa fa-envelope clickable-icon" title="Email Homayoon Alimohammadi"
+  target="_blank" rel="noopener"></a>&emsp;
+  <a href="https://twitter.com/homayoonalm" class="fa-brands fa-twitter clickable-icon" title="Homayoon Alimohammadi Twitter"
+  target="_blank" rel="noopener"></a>&emsp;
+  <a href="https://www.linkedin.com/in/homayoon-alimohammadi/" class="fa-brands fa-linkedin clickable-icon" title="Homayoon Alimohammadi LinkedIn"
+  target="_blank" rel="noopener"></a>&emsp;
+  <a href="https://telegram.me/homayoonalm" style="font-size:35px; color: rgb(0, 187, 255)" class="fa-brands fa-telegram clickable-icon" target="_blank" rel="noopener" title="Homayoon Alimohammadi Telegram"></a>&emsp;
+  <a href="https://github.com/homayoonalimohammadi" class="fa-brands fa-github clickable-icon" title="Homayoon Alimohammadi GitHub"
+  target="_blank" rel="noopener"></a>&emsp;
+  <a href="/" class="fa fa-home clickable-icon" title="Homayoon Alimohammadi Blog Home Page"></a>
   <br><br>
-      <a href="/resume">
-        <button class="download-button">
-              <span style="font-size: 18px;">
-              <b>My Resume</b>
+      <a href="/homayoon-alimohammadi-resume">
+        <button class="download-button" title="Homayoon Alimohammadi Resume">
+              <span style="font-size: 22px;">
+              <b>Resume</b>
           </span>
         </button>
       </a>
       <br><br>
-      <a href="https://medium.com/@homayoonalimohammadi" target="_blank" rel="noopener">
-        <img src="https://img.shields.io/badge/Medium-123?style=for-the-badge&logo=Medium&logoColor=Black" />
-        <a href="https://dev.to/homayoonalimohammadi" target="_blank" rel="noopener">
-          <img src="https://img.shields.io/badge/Dev-123?style=for-the-badge&logo=DevTo&logoColor=Black" />
+      <p style="opacity: 0.8; text-align: justify; padding-left: 40px; padding-right: 40px; font-style: italic">
+        I try to regularly write about interesting subjects, scenarios and challenges that I face in my career life. Make sure to checkout them out if you're interested!
+      </p>
+      <a href="https://medium.com/@homayoonalimohammadi"
+       target="_blank" rel="noopener" class="fa-brands fa-medium clickable-icon" title="Homayoon Alimohammadi Medium Technical Blogs">
+      </a>&emsp;
+        <a href="https://dev.to/homayoonalimohammadi" target="_blank" rel="noopener" class="fa-brands fa-dev clickable-icon" title="Homayoon Alimohammadi Dev Community Technical Blogs">
         </a>
  </div>
 
@@ -117,8 +125,8 @@ permalink: /technical/
   <hr>
 
   <div>
-    <a href="https://medium.com/@homayoonalimohammadi/enhancing-grpc-error-handling-in-a-microservice-architecture-2086253930bd">
-      <i style="font-size:20px" class="fa"><h2 style="font-size: x-large;">Enhancing gRPC Error Handling in a Microservice Architecture </h2></i>
+    <a href="https://medium.com/@homayoonalimohammadi/enhancing-grpc-error-handling-in-a-microservice-architecture-2086253930bd" title="Homayoon Alimohammadi Enhancing gRPC error handling in a microservice architecture">
+      <i style="font-size:20px"><h2 style="font-size: x-large;">Enhancing gRPC Error Handling in a Microservice Architecture </h2></i>
       </a>
       <p style="text-align: justify;">
         Error handling and the way it is done is a crucial part of software engineering. Poorly returned errors and non-informative ones can cause unimaginable headaches. In this article I'm going to demonstrate the problems that I've faced with regards to gRPC error handling and what we might be able do to in order to improve upon our originally not-so-useful gRPC errors...
@@ -126,13 +134,19 @@ permalink: /technical/
       <p style="font-size: 14px;">
         <b class="keywords">Keywords:</b> #grpc, #error, #go, #golang, #microservice
       </p>
+    </p>
+    <p style="font-size: 14px;">
+      <span class="fa fa-user keywords"></span>&nbsp;Homayoon Alimohammadi 
+      <br>
+      <span class="fa fa-calendar keywords"></span>&nbsp;August 2023
+    </p>
     </div>
         
     <hr class="mid-section">
 
   <div>
-    <a href="https://medium.com/@homayoonalimohammadi/handling-json-in-go-804a1d9bddf5">
-      <i style="font-size:20px" class="fa"><h2 style="font-size: x-large;">Handling JSON in Go </h2></i>
+    <a href="https://medium.com/@homayoonalimohammadi/handling-json-in-go-804a1d9bddf5" title="Homayoon Alimohammadi Handling JSON in Go">
+      <i style="font-size:20px" ><h2 style="font-size: x-large;">Handling JSON in Go </h2></i>
       </a>
       <p style="text-align: justify;">
         In Go, the encoding/json package offers built-in JSON marshaling and unmarshaling capabilities, allowing us to effortlessly convert Go data structures to JSON and vice versa. However, there are scenarios where the default behavior falls short, such as handling complex data structures, managing custom field names, or dealing with special data types. This article aims to provide an introduction on how JSON can be handled in Go, and as always, with a bit of customization...
@@ -140,13 +154,18 @@ permalink: /technical/
       <p style="font-size: 14px;">
         <b class="keywords">Keywords:</b> #go, #golang, #json
       </p>
+      <p style="font-size: 14px;">
+        <span class="fa fa-user keywords"></span>&nbsp;Homayoon Alimohammadi 
+        <br>
+        <span class="fa fa-calendar keywords"></span>&nbsp;July 2023
+      </p>
     </div>
         
     <hr class="mid-section">
 
   <div>
-    <a href="https://medium.com/@homayoonalimohammadi/protoc-plugins-with-go-52a178dbc27a">
-      <i style="font-size:20px" class="fa"><h2 style="font-size: x-large;">Protoc Plugins with Go </h2></i>
+    <a href="https://medium.com/@homayoonalimohammadi/protoc-plugins-with-go-52a178dbc27a" title="Homayoon Alimohammadi Protoc Plugins with Go">
+      <i style="font-size:20px" ><h2 style="font-size: x-large;">Protoc Plugins with Go </h2></i>
       </a>
       <p style="text-align: justify;">
         In this article we take a look at Protocol Buffers (protobufs) and explore the intricate workings of protoc plugins in the context of Go programming. With a focus on demystifying protoc plugins and their role in code generation, we walkthrough a humble overview of the inner workings of plugins with practical snippets...
@@ -154,13 +173,18 @@ permalink: /technical/
       <p style="font-size: 14px;">
         <b class="keywords">Keywords:</b> #go, #golang, #protoc, #protobuf, #protocolbuffers
       </p>
+      <p style="font-size: 14px;">
+        <span class="fa fa-user keywords"></span>&nbsp;Homayoon Alimohammadi 
+        <br>
+        <span class="fa fa-calendar keywords"></span>&nbsp;June 2023
+      </p>
     </div>
         
     <hr class="mid-section">
 
 <div>
-<a href="https://medium.com/@homayoonalimohammadi/circuitbreakers-in-go-d85f5297cb50">
-  <i style="font-size:20px" class="fa"><h2 style="font-size: x-large;">Circuit breakers (in Go) </h2></i>
+<a href="https://medium.com/@homayoonalimohammadi/circuitbreakers-in-go-d85f5297cb50" title="Homayoon Alimohammadi Circuit Breakers in Go">
+  <i style="font-size:20px" ><h2 style="font-size: x-large;">Circuit breakers (in Go) </h2></i>
   </a>
   <p style="text-align: justify;">
     Circuit breakers are a fundamental and basic, yet vital part of a system, especially if you are dealing with a micro-service architecture. Recently one of my colleagues was wondering what these "proxy like" pieces of code do, and while explaining to him, I figured although I kind of know what a circuit breaker is at a high level, I don't really know what is going on under the hood. So I decided to dig deeper and share what I've found...
@@ -168,13 +192,18 @@ permalink: /technical/
   <p style="font-size: 14px;">
     <b class="keywords">Keywords:</b> #go, #golang, #circuitbreaker, #microservice
   </p>
+  <p style="font-size: 14px;">
+    <span class="fa fa-user keywords"></span>&nbsp;Homayoon Alimohammadi 
+    <br>
+    <span class="fa fa-calendar keywords"></span>&nbsp;May 2023
+  </p>
 </div>
     
 <hr class="mid-section">
 
 <div>
-<a href="https://medium.com/@homayoonalimohammadi/golang-to-point-or-not-to-point-79b64e56a1bb">
-<i style="font-size:20px" class="fa"><h2 style="font-size: x-large;">Golang: to Point or not to Point! </h2></i>
+<a href="https://medium.com/@homayoonalimohammadi/golang-to-point-or-not-to-point-79b64e56a1bb" title="Homayoon Alimohammadi Golang to Point or not to Point">
+<i style="font-size:20px" ><h2 style="font-size: x-large;">Golang: to Point or not to Point! </h2></i>
 </a>
 <p style="text-align: justify;">
 Pointers have numerous benefits and to imagine coding without them, let's say it's not so pleasant. But they do have cons, one of them (at least for me) might be that they can cause confusion and may even break the code if not used with caution...
@@ -182,17 +211,17 @@ Pointers have numerous benefits and to imagine coding without them, let's say it
 <p style="font-size: 14px;">
   <b class="keywords">Keywords:</b> #go, #golang, #pointer
 </p>
+<p style="font-size: 14px;">
+  <span class="fa fa-user keywords"></span>&nbsp;Homayoon Alimohammadi 
+  <br>
+  <span class="fa fa-calendar keywords"></span>&nbsp;April 2023
+</p>
 </div>
-
-
-
 
 <hr class="top-section">
 <br>
 <div style="text-align: center;">
-    <a href="/" style="font-size:16px;" 
-    class="fa fa-home">&nbsp;<b>Back to Main Page</b></a>&emsp;
+    <a href="/" class="fa fa-home clickable-icon" title="Homayoon Alimohammadi Blog Home Page"></a>
 </div>
-
 
 </main>

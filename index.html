@@ -3,6 +3,8 @@ layout: default
 ---
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/1baae62b3f.js" crossorigin="anonymous"></script>
+
   <style>
     a {
       text-decoration: none;
@@ -17,28 +19,34 @@ layout: default
         margin-top: 15px;
         margin-bottom: 0px;
       }
-
-      .download-button {
-        border-radius: 10px;
-        width: 240px;
-        height: 40px;
-        border-width: 2px;
+      
+      .button {
+        border-radius: 15px;
+        width: 120px;
+        height: 50px;
+        box-shadow: 1px 2px 5px rgb(0, 187, 255);
+        border-width: 1px;
         border-color: rgb(0, 187, 255);
         background-color: white;
         border-style: solid;
         color: rgb(0, 187, 255);
+        transition: background-color 0.25s ease;
       }
 
-      .download-button:hover {
-        border-radius: 10px;
-        width: 240px;
-        height: 40px;
-        border-width: 2px;
-        border-color: rgb(0, 187, 255);
+      .button:hover {
         background-color: rgb(214, 242, 255);
-        border-style: solid;
-        color: rgb(0, 187, 255);
         cursor: pointer;
+      }
+
+      .clickable-icon {
+        transition:transform .15s ease;
+        font-size: 35px;
+        color: rgb(0, 187, 255);
+
+      }
+
+      .clickable-icon:hover {
+        transform:scale(1.5)
       }
 
   </style>
@@ -57,20 +65,27 @@ layout: default
     <h1 class="blog-title" style="font-size: 35px;">{{ site.title }}</h1>
     <h2 class="blog-description" style="color: rgb(72, 72, 72)">{{ site.description }}</h2>
     <div class="custom-links">
-      <a href="mailto: homayoonalimohammadi@gmail.com" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-envelope" title="Email me"
-      target="_blank" rel="noopener noreferrer"></a>&emsp;
-      <a href="https://twitter.com/homayoonalm" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-twitter" title="Twitter"
-      target="_blank" rel="noopener noreferrer"></a>&emsp;
-      <a href="https://www.linkedin.com/in/homayoon-alimohammadi/" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-linkedin" title="LinkedIn"
-      target="_blank" rel="noopener noreferrer"></a>&emsp;
-      <a href="/technical" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-book" title="Technical Blogs"></a>&emsp;
-      <a href="https://github.com/homayoonalimohammadi" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-github" title="GitHub"
-      target="_blank" rel="noopener noreferrer"></a>
+      <a href="mailto: homayoonalimohammadi@gmail.com" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-envelope clickable-icon" title="Email Homayoon Alimohammadi"
+      target="_blank" rel="noopener"></a>&emsp;
+      <a href="https://twitter.com/homayoonalm" style="font-size:35px; color: rgb(0, 187, 255)" class="fa-brands fa-twitter clickable-icon" title="Homayoon Alimohammadi Twitter"
+      target="_blank" rel="noopener"></a>&emsp;
+      <a href="https://www.linkedin.com/in/homayoon-alimohammadi/" style="font-size:35px; color: rgb(0, 187, 255)" class="fa-brands fa-linkedin clickable-icon" title="Homayoon Alimohammadi LinkedIn"
+      target="_blank" rel="noopener"></a>&emsp;
+      <a href="https://telegram.me/homayoonalm" style="font-size:35px; color: rgb(0, 187, 255)" class="fa-brands fa-telegram clickable-icon" target="_blank" rel="noopener" title="Homayoon Alimohammadi Telegram"></a>&emsp;
+      <a href="https://github.com/homayoonalimohammadi" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-github clickable-icon" title="Homayoon Alimohammadi GitHub"
+      target="_blank" rel="noopener"></a>
       <br><br>
-      <a href="/resume">
-        <button class="download-button">
-              <span style="font-size: 18px;">
-              <b>My Resume</b>
+      <a href="/homayoon-alimohammadi-resume">
+        <button class="button" title="Homayoon Alimohammadi Resume">
+              <span style="font-size: 20px;">
+              <b>Resume</b>
+          </span>
+        </button>
+      </a>&nbsp;
+      <a href="/homayoon-alimohammadi-technical-blogs">
+        <button class="button" title="Homayoon Alimohammadi Technical Blogs">
+              <span style="font-size: 20px;">
+              <b>Blogs</b>
           </span>
         </button>
       </a>
@@ -79,52 +94,40 @@ layout: default
 </header>
 
 
-<main class="content" role="main" style="text-align: justify">
+<main class="content" role="main" style="text-align: justify; text-align-last: center;">
 
   <div>
-    <h3>Hello guys!</h3> 
-    <p>
-      I am a dedicated and enthusiastic <b>Software Engineer</b> with a passion for continuous improvement. My focus lies in cultivating expertise in areas such as <b>Cloud Computing</b>, and <b>Machine Learning</b>. I am committed to learning and advancing daily, aiming to contribute effectively to innovative projects in the dynamic world of technology.<br>
+    <p style="opacity: 0.8">
+      I am a hard-working, dedicated and enthusiastic <b>Software Engineer</b> with a passion for continuous improvement. My focus lies in cultivating expertise in areas such as <b>Machine Learning</b> and <b>Cloud Computing</b>. I am committed to learning and advancing daily, aiming to contribute effectively to innovative projects in the dynamic world of technology.<br>
     </p>
     </div>
     <div>
-      <p>
-        I try to regularly write about interesting things and challenges that I face in my career life. Make sure to checkout my <a href="/technical">Blogs</a> if you're interested.
+      <p style="opacity: 0.8">
+        You can Checkout my <a href="/homayoon-alimohammadi-resume" title="Homayoon Alimohammadi Resume">Resume</a>, in case you're interested!
       </p>
-      <p>
-        You can Checkout my <a href="/resume">Resume</a>, in case you're interested!
+      <p style="opacity: 0.8">
+        I try to regularly write about interesting subjects, scenarios and challenges that I face in my career life. Make sure to checkout my <a href="/homayoon-alimohammadi-technical-blogs" title="Homayoon Alimohammadi Technical Blogs">Blogs</a> if you're interested.
       </p>
-      <div align="center">
-      <a href="https://medium.com/@homayoonalimohammadi" target="_blank" rel="noopener">
-        <img src="https://img.shields.io/badge/Medium-123?style=for-the-badge&logo=Medium&logoColor=Black" />
-        <a href="https://dev.to/homayoonalimohammadi" target="_blank" rel="noopener">
-          <img src="https://img.shields.io/badge/Dev-123?style=for-the-badge&logo=DevTo&logoColor=Black" />
+      <div style="text-align: center;">
+        <a href="/homayoon-alimohammadi-technical-blogs" style="font-size:35px; color: rgb(0, 187, 255)" class="fa fa-blog clickable-icon" title="Homayoon Alimohammadi Technical Blogs"></a>&emsp;
+      <a href="https://medium.com/@homayoonalimohammadi" target="_blank" rel="noopener" class="fa-brands fa-medium clickable-icon" title="Homayoon Alimohammadi Medium Technical Blogs">
+      </a>&emsp;
+        <a href="https://dev.to/homayoonalimohammadi" target="_blank" rel="noopener" title="Homayoon Alimohammadi Dev Community Technical Blogs" class="fa-brands fa-dev clickable-icon">
         </a>
-      </div>
-      <p>Here are links to my <a href="https://github.com/homayoonalimohammadi/" target="_blank" rel="noopener">GitHub</a> and <a href="https://gitlab.com/HomayoonAlimohammadi" target="_blank" rel="noopener">Gitlab</a> profile.</p>
     </div>    
-    <p>
-    Make sure to <b>Contact</b> me if you needed to:
+    <p style="opacity: 0.8">
+    Make sure to <b>Contact</b> me if you wanted to. It's always good to have a chat
     </p>
-    <div align="center">
-  
-      <a href="https://linkedin.com/in/homayoon-alimohammadi/"  target="_blank" rel="noopener" style="text-decoration: none">
-        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-      </a>
-    <a href="https://twitter.com/homayoonalm" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" />
-    </a>
-    <a href="https://telegram.me/homayoonalm" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=Telegram&logoColor=white" />
-      </a>
-      <p style="text-align:center">
-        <i id="icon-phone" style="font-size:24px" class="fa">&#xf095;</i>&nbsp;
-        <i id="icon-telegram" style="font-size:22px" class="fa">&#xf2c6;</i>&nbsp;
-        <i id="icon-whatsapp" style="font-size:24px" class="fa">&#xf232;</i>&nbsp;
+    <div style="text-align: center;">
+      
+      <p style="text-align:center; opacity: 0.8;">
+        <i class="fa fa-phone" style="font-size: 24px; opacity: 0.65;"></i>&nbsp;
+        <i class="fa-brands fa-whatsapp" style="font-size: 24px; opacity: 0.65;"></i>&nbsp;
+        <i class="fa-brands fa-telegram" style="font-size: 24px; opacity: 0.65;"></i>&nbsp;
        +98 912 0190 397
       </p>
-      <p style="font-size: 18px;">
-        <i style="font-size:22px" class="fa">&#xf0e0;</i>&nbsp;
+      <p style="font-size: 16px; opacity: 0.8;">
+        <i style="font-size:22px; opacity: 0.65;" class="fa">&#xf0e0;</i>&nbsp;
          homayoonalimohammadi@gmail.com
        </p>
     
