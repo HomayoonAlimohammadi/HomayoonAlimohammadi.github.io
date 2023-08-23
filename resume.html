@@ -2,8 +2,9 @@
 layout: default
 title: Resume
 permalink: /homayoon-alimohammadi-resume/
+description: Homayoon Alimohammadi's Resume
+keywords: Resume, resume, homayoon-alimohammadi-resume
 ---
-
 
 <div class="teaserimage">
     <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
@@ -158,6 +159,29 @@ permalink: /homayoon-alimohammadi-resume/
 </header>
 
 <main class="content" role="main">
+
+<!-- BreadcrumbList Schema for Resume Page -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://homayoon.blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Resume",
+        "item": "https://homayoon.blog/homayoon-alimohammadi-resume"
+      }
+    ]
+  }
+</script>
+
 <div>
 <hr class="top-section">
 <h1>About Me</h1>
